@@ -5,19 +5,23 @@
     "main": "server.js",
     "scripts": {
         "start": "node server",
-        "server": "nodemon server"
+        "server": "nodemon server",
+        "client": "npm start --prefix client",
+        "dev": "concurrently \"npm run server\" \"npm run client\""
     },
     "author": "Jamie Dodds",
     "license": "MIT",
     "dependencies": {
         "bcryptjs": "^2.4.3",
         "config": "^3.2.2",
+        "create-react-app": "^3.1.2",
         "express": "^4.17.1",
         "express-validator": "^6.2.0",
         "gravatar": "^1.8.0",
         "i": "^0.3.6",
         "jsonwebtoken": "^8.5.1",
         "mongoose": "^5.7.1",
+        "npm": "^6.11.3",
         "request": "^2.88.0"
     },
     "devDependencies": {
